@@ -1,0 +1,21 @@
+hr.hr-text {
+    position: relative;
+    border: none;
+    height: 1px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    hr.hr-text::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #fff;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
